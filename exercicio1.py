@@ -62,4 +62,30 @@ while True:
     
     else:
         print("Opcao inválida! Tente novamente.")
-        
+
+
+---
+config:
+      theme: redux
+---
+flowchart TD
+        A(["Inicio"])
+        A --> B["Menu"]
+        B --> C{"Digite a opção"}
+        C--> D["1 - Cadastrar produto"]
+            D --> F["Digite o nome do produto"]
+        C--> E["2 - Retirar do estoque"]
+            E--> G{"Digite a quantidade a retirar: "}
+            G--> I["if retirar <= 0"]
+            I--> J["A quantidade deve ser maior que zero!"]
+            G--> K["elif retirar > quantidade"]
+            K--> L["Quantidade insuficiente no estoque!"]
+            G--> M["quantidade -= retirar"]
+            M--> N["Retirado {retirar} unidades(s). Estoque atual: {quantidade}"]
+        C--> O["3 - Adicionar ao estoque"]
+            O--> P{"Digite a quantidade a adicionar:"}
+                P--> Q["if adicionar <= 0:"]
+                    Q--> R["A quantidade deve ser maior que zero!"]
+                Q--> S["Adicionado {adicionar} unidade(s). Estoque atual: {quantidade}"]
+        C--> T["4 - Ver quantidade em estoque"] 
+            T--> U["Produto: {produto} Quantidade em estoque: {quantidade}"]
