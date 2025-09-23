@@ -1,4 +1,4 @@
-#EXERCICIO 4 CODIGO PARA "BETTER LETTERS" (Python)
+#EXERCICIO 4 - REDE SOCIAL (CODIGO PARA "BETTER LETTERS") (Python)
 
 
 from dataclasses import dataclass
@@ -121,3 +121,4 @@ def menu():
 if __name__ == "__main__":
 
     menu()
+
