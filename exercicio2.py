@@ -1,4 +1,4 @@
-#EXERCICIO1
+#EXERCICIO 1.2
 evento = "Taylor Swift, Eras Tour"
 Ingresso = 500 
 quantidade = 80
@@ -36,4 +36,5 @@ paciente.insert(0, input("Qual o nome do paciente: "))
 print(paciente)
 
 paciente(input("paciente atendido: "))
+
    
