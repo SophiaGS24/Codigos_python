@@ -1,5 +1,7 @@
 #EXERCÍCIO 5
 
+#1. Requisitos funcionais:
+
 #	1- sistema precisa ter agendamento
 #	2- sistema precisa ter cadastro da agenda do barbeiro
 #	3- precisa ter cadastro do serviço (ex.: corte + preço)
@@ -8,7 +10,9 @@
 #	6- precisa ter avisos para clientes (lembretes automaticos)
 #	7- precisa ter BD para analizar o faturamento de cada barbeiro (mensal), com data de cada dia que vieram, corte 
 #e quanto faturaram
-	
+# ---------------------------
+
+# anotações pessoais:
 
 #agendamento:
 
@@ -39,6 +43,7 @@
 #- lembrete numero/email no dia anterior
 #- histórico dos clientes (lista)
 #- reagendamento
+
 
 #CODIGO:
 
@@ -114,4 +119,5 @@ def Barbeiro():
     print(f"o total do salário mensal dele este mês é: {faturamento}")
     print(f"O salario dele será de ->{comissao} ")
     
+
 Barbeiro()
