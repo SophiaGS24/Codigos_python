@@ -2,14 +2,13 @@
 
 #1. Requisitos funcionais:
 
-#	1- sistema precisa ter agendamento
-#	2- sistema precisa ter cadastro da agenda do barbeiro
-#	3- precisa ter cadastro do serviço (ex.: corte + preço)
-#	4- precisa ter gerenciamento de caixa (forma de pagamento, comprovante, emissão de nfc-e)
-#	5- precisa ter catálogo de cortes e procedimentos (serviços oferecidos), para clientes
-#	6- precisa ter avisos para clientes (lembretes automaticos)
-#	7- precisa ter BD para analizar o faturamento de cada barbeiro (mensal), com data de cada dia que vieram, corte 
-#e quanto faturaram
+#1. Requisitos funcionais:
+
+#	1- sistema precisa ter opçao para 'informar o problema' para manutenção
+#	2- sistema precisa ter cadastro de nome do cliente
+#	3- precisa ter cadastro do serviço (formatação: 80, limpeza geral: 50, remoção de vírus: 60, instalação de programas: 40)
+#	4- precisa ter o adicional de 30% pela 'mão de obra'
+#	5- precisa ter 'catálogo' para 
 # ---------------------------
 
 # anotações pessoais:
@@ -121,3 +120,4 @@ def Barbeiro():
     
 
 Barbeiro()
+
