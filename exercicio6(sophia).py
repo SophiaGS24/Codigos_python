@@ -1,6 +1,29 @@
 
 #exercicio 6 (loja de informática)
 
+#1. Requisitos funcionais:
+
+#	1- sistema precisa ter opçao para 'informar o problema' para manutenção
+#	2- sistema precisa ter cadastro de nome do cliente
+#	3- precisa ter cadastro do serviço 
+#	4- precisa ter o adicional de 30% pela 'mão de obra'
+#	5- precisa ter estoque
+#	6- acompanhamento (status) para saber a 'fase' do computador.
+#	7- relatorio de problemas frequentes
+#	8- taxa para os ' clientes esquecidos', R$10,00 por dia
+#	9- sistema precisa ter cadastro de nome do funcionário (técnicos)
+# ---------------------------
+
+# anotações pessoais:
+
+# formatação: 80, limpeza geral: 50, remoção de vírus: 60, instalação de programas: 40
+# RAM, HD, SSD, FONTE, PLACA DE VIDEO.
+# 'esquecidos', R$10,00 por dia
+# add 30% // 'mão de obra'
+# fases: em analise, aguardando orçamento, em manutenção,  testando, pronto para retirada
+
+
+#CODIGO:
 
 servicos = {
     "formatação": 80,
@@ -116,3 +139,4 @@ def menu():
             print("ERRO!! Tente novamente...")
 
 menu()
+
