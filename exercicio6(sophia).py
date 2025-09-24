@@ -41,13 +41,14 @@ estoque = {
 }
 
 reparos = []
-
+#serviços disponíveis
 def listar_servicos():
     print("\n--- Nossos Serviços! ---")
     for nome, preco in servicos.items():
         print(f"{nome} - R$ {preco}")
     print("-------------------------")
 
+#'agendamento' para reparos /orçamento
 def adicionar_reparo():
     cliente = input("Nome do cliente: ")
     descricao = input("Descrição do reparo: ")
@@ -63,6 +64,7 @@ def adicionar_reparo():
     reparos.append(reparo)
     print(f"\n[OK] Reparo adicionado para {cliente}.")
 
+#acompanhamento/status
 def atualizar_status():
     cliente = input("Nome do cliente: ")
     novo_status = input("Status: ")
@@ -81,6 +83,7 @@ def consultar_status():
             return
     print("[ERRO] Cliente não encontrado.")
 
+#para vendas de peças 
 def vender_peca():
     nome_peca = input("Nome da peça: ")
     quantidade = int(input("Quantidade: "))
@@ -95,6 +98,7 @@ def vender_peca():
     else:
         print("[ERRO] Peça não encontrada.")
 
+#relatorio de problemas frequentes
 def gerar_relatorio():
     print("\n--- Relatório ---")
     print(f"Total de reparos: {len(reparos)}")
@@ -107,6 +111,7 @@ def gerar_relatorio():
         print(f" - {t}: {qtd} serviços")
     print("-----------------")
 
+#main menu
 def menu():
     while True:
         print("\n--- TechFix ---")
@@ -139,4 +144,5 @@ def menu():
             print("ERRO!! Tente novamente...")
 
 menu()
+
 
