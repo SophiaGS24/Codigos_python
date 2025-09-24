@@ -14,6 +14,7 @@ class Publicacao:
 
 lista_publicacoes = []
 
+#publicação
 def Criar_publicacao():
     print("\n === Crie sua Publicação! :) ===")
     titulo = input("O que está na sua mente agora? :o ")
@@ -41,7 +42,8 @@ def Curtir_publicacao():
              print(" :( Publicação não encontrada :( ")
     except ValueError:
         print("Número inválido. :/ ")
-    
+
+#feed
 def visualizar_feed():
     print("Que tal dar uma olhada no Feed? :) ")
     if not lista_publicacoes:
@@ -53,7 +55,8 @@ def visualizar_feed():
         print(f"    {pub.titulo[:50]}...")
         print(f"    {pub.datetime.strftime('%d/%m/%Y %H:%M')}")
         print("-" * 40)
-        
+
+#visualização de outras publicações: 'feed'/ por 'autor'
 def visualizar_publicacao_individual():
     print("Vem ver essa publicação! :o ")
     if not lista_publicacoes:
@@ -93,6 +96,8 @@ def visualizar_publicacao_autor():
         print(f" {pub.datetime.strftime('%d/%m/%Y %H:%M')}")
         print("-" * 30)
 
+
+#menu principal
 def menu():
     while True:
         print("\n=== :) BETTER LETTERS (: ===")
@@ -121,4 +126,5 @@ def menu():
 if __name__ == "__main__":
 
     menu()
+
 
