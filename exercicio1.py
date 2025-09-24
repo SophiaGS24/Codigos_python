@@ -5,6 +5,8 @@
 #3. Opção de adicionar produto no estoque (precisa adicionar um numero maior que 0)
 #4. Opção de ver a quantidade no estoque
 
+
+#menu principal
 def menu():
     print("\n--- Sistema de Estoque ---")
     print("1 - Cadastrar produto")
@@ -14,7 +16,7 @@ def menu():
     print("0 - Sair")
     return input("Escolha uma opção: ")
     
-# Variáveis de controle
+#cadastro de produto e quantidade
 produto = None
 quntidade = 0
 
@@ -89,3 +91,4 @@ flowchart TD
                 Q--> S["Adicionado {adicionar} unidade(s). Estoque atual: {quantidade}"]
         C--> T["4 - Ver quantidade em estoque"] 
             T--> U["Produto: {produto} Quantidade em estoque: {quantidade}"]
+
