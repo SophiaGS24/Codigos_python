@@ -59,6 +59,7 @@ class Agendamento:
 
 lista_agendamento = []
 
+#menu principal
 def Menu():
     input("Olá! O ue você quer fazer? 1- Agendar Corte/ 2- fazer Login (Empresa) ")
     if opcao == "1":
@@ -99,6 +100,7 @@ print(f"Marca aí! Seu novo horário é: {lista_agendamento}!")
 
 Agendar()
 
+#menu Barbeiro
 class Barbeiro:
     nome: str
     dias: str
@@ -120,4 +122,5 @@ def Barbeiro():
     
 
 Barbeiro()
+
 
